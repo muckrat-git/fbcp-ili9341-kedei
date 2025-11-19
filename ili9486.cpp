@@ -7,6 +7,8 @@
 #include <memory.h>
 #include <stdio.h>
 
+#undef DISPLAY_SPI_BUS_IS_16BITS_WIDE
+
 void InitILI9486()
 {
   // If a Reset pin is defined, toggle it briefly high->low->high to enable the device. Some devices do not have a reset pin, in which case compile with GPIO_TFT_RESET_PIN left undefined.
